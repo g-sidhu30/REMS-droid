@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Holliday</string>
+
+    <string name="house_type_prompt">House Type</string>
+
+    <string-array name="house_array">
+        <item>Farm</item>
+        <item>Apartment</item>
+        <item>Duplex</item>
+        <item>Detached</item>
+        <item>Garage</item>
+    </string-array>
+</resources>
