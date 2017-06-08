@@ -13,21 +13,12 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="100dp"
+        android:layout_width="300dp"
         android:layout_height="100dp"
-        android:src="@drawable/green"
+        android:src="@drawable/green2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"/>
-    <TextView
-        android:id="@+id/holliday"
-        android:layout_below="@+id/logo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Holliday"
-        android:textSize="40dp"
-        android:textColor="#fff"
-        android:gravity="center"
-        android:layout_marginTop="70dp"/>
+
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -100,12 +91,12 @@
         />
     </LinearLayout>
     <custom_font.MyTextView
-        android:id="@+id/getstarted"
+        android:id="@+id/loginText"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/round"
 
-        android:text="Get Started"
+        android:text="Login"
         android:textStyle="bold"
         android:gravity="center"
         android:textColor="#fff"
@@ -113,7 +104,9 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginBottom="20dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:onClick="loginClick"/>
 
 <LinearLayout
     android:id="@+id/bottom"
@@ -129,14 +122,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Create Account"
-        android:textColor="#FFF"/>
-    <custom_font.MyTextView
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Need Help ?"
         android:textColor="#FFF"
-        android:gravity="end"/>
+        android:gravity="center"
+        android:clickable="true"
+        android:onClick="onClick"/>
+
 </LinearLayout>
 
 

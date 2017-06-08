@@ -10,8 +10,8 @@
         android:layout_width="300dp"
         android:layout_height="200dp"
         android:src="@drawable/green2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
+        android:layout_above="@+id/myTextView"
+        android:layout_centerHorizontal="true" />
 
   <custom_font.MyTextView
       android:layout_above="@+id/main"
@@ -21,7 +21,8 @@
       android:gravity="center"
       android:textColor="@color/colorPrimary"
       android:textSize="20dp"
-      android:layout_marginBottom="50dp"/>
+      android:layout_marginBottom="50dp"
+      android:id="@+id/myTextView" />
 
 <LinearLayout
     android:id="@+id/main"
@@ -45,21 +46,21 @@
             android:src="@drawable/email"
             android:layout_gravity="center"
             android:paddingLeft="10dp"/>
-        <Spinner
+        <custom_font.MyEditText
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="#00000000"
             android:paddingLeft="10dp"
-            android:letterSpacing="0.1"
-            android:hint="Email Address"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
             android:textColor="@color/colorPrimary"
+            android:letterSpacing="0.1"
             android:textColorHint="@color/colorPrimary"
             android:drawablePadding="10dp"
             android:textSize="13dp"
-            android:prompt="@string/house_type_prompt"
-            android:entries="@array/house_array"
             />
+
     </LinearLayout>
 <LinearLayout
     android:layout_width="match_parent"
